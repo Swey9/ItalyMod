@@ -2,13 +2,13 @@
 <Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
-    <Name>My Custom Mod</Name>
+    <Name>Swey's Italian Civilizations</Name>
     <Guid>e8832141-735e-4836-b8c6-ee2e24d6e58f</Guid>
     <ProjectGuid>185f64d1-d35b-4f7f-9320-cd8b994ac018</ProjectGuid>
     <ModVersion>1</ModVersion>
     <Teaser>This is a brief description of the mod.</Teaser>
     <Description>This is a brief description of the mod.</Description>
-    <Authors>User</Authors>
+    <Authors>Swey Civs</Authors>
     <SpecialThanks>
     </SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
@@ -18,9 +18,12 @@
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
     <AssociationData><![CDATA[<Associations>
   <Dependency type="Dlc" title="Expansion: Gathering Storm" id="4873eb62-8ccc-4574-b784-dda455e74e68" />
+  <Dependency type="Dlc" title="Expansion: Rise and Fall" id="1B28771A-C749-434B-9053-D1380C553DE9" />
 </Associations>]]></AssociationData>
     <AssemblyName>Italy</AssemblyName>
     <RootNamespace>Italy</RootNamespace>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="FE_Text_Swey_Italy"><File>Text/Swey_Italy_Text.sql</File></UpdateText><UpdateDatabase id="FE_Database_Swey_Italy"><File>Core/Swey_Italy_Players.sql</File></UpdateDatabase><ImportFiles id="NewAction"><File>Textures/Sardinia200.dds</File><File>Textures/Sardinia200.tex</File><File>Textures/Sardinia256.dds</File><File>Textures/Sardinia256.tex</File><File>Textures/Sardinia32.dds</File><File>Textures/Sardinia32.tex</File><File>Textures/Sardinia36.dds</File><File>Textures/Sardinia36.tex</File><File>Textures/Sardinia45.dds</File><File>Textures/Sardinia45.tex</File><File>Textures/Sardinia48.dds</File><File>Textures/Sardinia48.tex</File><File>Textures/Sardinia50.dds</File><File>Textures/Sardinia50.tex</File><File>Textures/Sardinia55.dds</File><File>Textures/Sardinia55.tex</File><File>Textures/Sardinia64.dds</File><File>Textures/Sardinia64.tex</File><File>Textures/Sardinia80.dds</File><File>Textures/Sardinia80.tex</File></ImportFiles><UpdateIcons id="FE_Icons_Swey_Italy"><File>Core/Swey_Italy_Icons.sql</File><File>XLPs/SardiniaAtlas.xlp</File></UpdateIcons></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateText id="IG_Text_Swey_Italy"><File>Text/Swey_Italy_Text.sql</File></UpdateText><UpdateDatabase id="IG_Databse_Swey_Italy"><File>Core/Swey_Italy_Civilizations.sql</File><File>Core/Swey_Italy_Colors.sql</File><File>Core/Swey_Italy_Improvements.sql</File><File>Core/Swey_Italy_Info.sql</File><File>Core/Swey_Italy_Leaders.sql</File><File>Core/Swey_Italy_Traits.sql</File><File>Core/Swey_Italy_Units.sql</File></UpdateDatabase><ImportFiles id="NewAction"><File>Textures/Sardinia200.dds</File><File>Textures/Sardinia200.tex</File><File>Textures/Sardinia256.dds</File><File>Textures/Sardinia256.tex</File><File>Textures/Sardinia32.dds</File><File>Textures/Sardinia32.tex</File><File>Textures/Sardinia36.dds</File><File>Textures/Sardinia36.tex</File><File>Textures/Sardinia45.dds</File><File>Textures/Sardinia45.tex</File><File>Textures/Sardinia48.dds</File><File>Textures/Sardinia48.tex</File><File>Textures/Sardinia50.dds</File><File>Textures/Sardinia50.tex</File><File>Textures/Sardinia55.dds</File><File>Textures/Sardinia55.tex</File><File>Textures/Sardinia64.dds</File><File>Textures/Sardinia64.tex</File><File>Textures/Sardinia80.dds</File><File>Textures/Sardinia80.tex</File></ImportFiles><UpdateIcons id="IG_Icons_Swey_Italy"><File>Core/Swey_Italy_Icons.sql</File><File>XLPs/SardiniaAtlas.xlp</File></UpdateIcons></InGameActions>]]></InGameActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -32,9 +35,101 @@
     <Folder Include="Core" />
     <Folder Include="Lua" />
     <Folder Include="Text" />
+    <Folder Include="Textures\" />
+    <Folder Include="XLPs\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Core\Swey_Italy_GameData.sql">
+    <Content Include="Core\Swey_Italy_Civilizations.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Swey_Italy_Colors.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Swey_Italy_Icons.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Swey_Italy_Improvements.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Swey_Italy_Info.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Swey_Italy_Leaders.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Swey_Italy_Players.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Swey_Italy_Traits.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Swey_Italy_Units.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia200.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia200.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia256.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia256.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia32.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia32.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia36.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia36.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia45.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia45.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia48.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia48.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia50.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia50.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia55.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia55.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia64.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia64.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia80.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Sardinia80.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\Swey_Italy_Text.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\SardiniaAtlas.xlp">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>
