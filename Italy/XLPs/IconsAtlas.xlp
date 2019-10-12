@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>253</build>
+		<revision>867</revision>
+	</m_Version>
+	<m_ClassName text="UITexture"/>
+	<m_PackageName text="UI/Icons"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="CivilizationIcons22"/>
+			<m_ObjectName text="CivilizationIcons22"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CivilizationIcons30"/>
+			<m_ObjectName text="CivilizationIcons30"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CivilizationIcons36"/>
+			<m_ObjectName text="CivilizationIcons36"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CivilizationIcons44"/>
+			<m_ObjectName text="CivilizationIcons44"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CivilizationIcons48"/>
+			<m_ObjectName text="CivilizationIcons48"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CivilizationIcons50"/>
+			<m_ObjectName text="CivilizationIcons50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CivilizationIcons64"/>
+			<m_ObjectName text="CivilizationIcons64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CivilizationIcons80"/>
+			<m_ObjectName text="CivilizationIcons80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CivilizationIcons200"/>
+			<m_ObjectName text="CivilizationIcons200"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CivilizationIcons256"/>
+			<m_ObjectName text="CivilizationIcons256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ImprovementIcons32"/>
+			<m_ObjectName text="ImprovementIcons32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ImprovementIcons38"/>
+			<m_ObjectName text="ImprovementIcons38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ImprovementIcons50"/>
+			<m_ObjectName text="ImprovementIcons50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ImprovementIcons80"/>
+			<m_ObjectName text="ImprovementIcons80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ImprovementIcons128"/>
+			<m_ObjectName text="ImprovementIcons128"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ImprovementIcons256"/>
+			<m_ObjectName text="ImprovementIcons256"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>

@@ -41,14 +41,17 @@ VALUES
 -- Improvements
 -------------------------------------
         ('LOC_IMPROVEMENT_SWEY_NURAGHE_NAME',                               'en_US',    'Nuraghe'),
+        ('LOC_IMPROVEMENT_SWEY_NURAGHE_DESCRIPTION',                        'en_US',    'Unlocks the Builder and Military Engineer abilities to construct a Nuraghe, unique to Sardinia.[NEWLINE][NEWLINE]Occupying unit receives +2 [ICON_Strength] Defense Strength. +2 [ICON_Culture] Culture. +1 [ICON_Faith] Faith if next to a holy site. +2 [ICON_Faith] Faith if next to a natural wonder.'),
 -------------------------------------
 -- Units
 -------------------------------------
         ('LOC_UNIT_SWEY_BUJAKESOS_NAME',                                    'en_US',    'Bujakesos'),
+        ('LOC_UNIT_SWEY_BUJAKESOS_DESCRIPTION',                             'en_US',    'Sardinian unique heavy cavalry unit that replaces the Knight. Melee class unit with a ranged attack, [ICON_Range] Range 1.'),
 ---------------------------------------         
 -- Traits            
 ---------------------------------------   
         ('LOC_TRAIT_CIVILIZATION_IMPROVEMENT_SWEY_NURAGHE_NAME',            'en_US',    'Nuraghe'),
         ('LOC_TRAIT_CIVILIZATION_UNIT_SWEY_BUJAKESOS_NAME',                 'en_US',    'Bujakesos'),
         ('LOC_TRAIT_CIVILIZATION_SWEY_GIUDICATI_OF_SARDINIA_NAME',          'en_US',    'Giudicati of Sardinia'),
-        ('LOC_TRAIT_LEADER_SWEY_CARTA_DE_LOGU_NAME',                        'en_US',    'Carta de Lugo');
+        ('LOC_TRAIT_LEADER_SWEY_CARTA_DE_LOGU_NAME',                        'en_US',    'Carta de Lugo'),
+        ('LOC_TRAIT_LEADER_SWEY_CARTA_DE_LOGU_DESCRIPTION',                 'en_US',    '+0.5 [ICON_Culture] Culture and +0.5 [ICON_Gold] Gold per citizen.');

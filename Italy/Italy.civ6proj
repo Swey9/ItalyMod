@@ -17,13 +17,13 @@
     <SupportsHotSeat>true</SupportsHotSeat>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
     <AssociationData><![CDATA[<Associations>
-  <Dependency type="Dlc" title="Expansion: Gathering Storm" id="4873eb62-8ccc-4574-b784-dda455e74e68" />
-  <Dependency type="Dlc" title="Expansion: Rise and Fall" id="1B28771A-C749-434B-9053-D1380C553DE9" />
+  <Reference type="Dlc" title="Expansion: Rise and Fall" id="1B28771A-C749-434B-9053-D1380C553DE9" />
+  <Reference type="Dlc" title="Expansion: Gathering Storm" id="4873eb62-8ccc-4574-b784-dda455e74e68" />
 </Associations>]]></AssociationData>
     <AssemblyName>Italy</AssemblyName>
     <RootNamespace>Italy</RootNamespace>
-    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="FE_Text_Swey_Italy"><File>Text/Swey_Italy_Text.sql</File></UpdateText><UpdateDatabase id="FE_Database_Swey_Italy"><File>Core/Swey_Italy_Players.sql</File></UpdateDatabase><ImportFiles id="FE_Add_Icons_Files_Swey_Italy"><File>Textures/Civilizations256.dds</File><File>Textures/Civilizations200.dds</File><File>Textures/Civilizations80.dds</File><File>Textures/Civilizations64.dds</File><File>Textures/Civilizations50.dds</File><File>Textures/Civilizations48.dds</File><File>Textures/Civilizations44.dds</File><File>Textures/Civilizations36.dds</File><File>Textures/Civilizations30.dds</File><File>Textures/Civilizations22.dds</File><File>Textures/Civilizations32.dds</File></ImportFiles><UpdateIcons id="FE_Update_Icons_Swey_Italy"><File>Core/Swey_Italy_Icons.sql</File></UpdateIcons><UpdateArt id="NewAction"><File>(Mod Art Dependency File)</File></UpdateArt></FrontEndActions>]]></FrontEndActionData>
-    <InGameActionData><![CDATA[<InGameActions><UpdateText id="IG_Text_Swey_Italy"><File>Text/Swey_Italy_Text.sql</File></UpdateText><UpdateDatabase id="IG_Databse_Swey_Italy"><File>Core/Swey_Italy_Civilizations.sql</File><File>Core/Swey_Italy_Colors.sql</File><File>Core/Swey_Italy_Improvements.sql</File><File>Core/Swey_Italy_Info.sql</File><File>Core/Swey_Italy_Leaders.sql</File><File>Core/Swey_Italy_Units.sql</File></UpdateDatabase><ImportFiles id="IG_Add_Icons_Files_Swey_Italy"><File>Textures/Civilizations256.dds</File><File>Textures/Civilizations200.dds</File><File>Textures/Civilizations80.dds</File><File>Textures/Civilizations64.dds</File><File>Textures/Civilizations50.dds</File><File>Textures/Civilizations48.dds</File><File>Textures/Civilizations44.dds</File><File>Textures/Civilizations36.dds</File><File>Textures/Civilizations30.dds</File><File>Textures/Civilizations22.dds</File><File>Textures/Civilizations32.dds</File></ImportFiles><UpdateIcons id="IG_Update_Icons_Swey_Italy"><File>Core/Swey_Italy_Icons.sql</File></UpdateIcons><UpdateArt id="IG_UpdateArt_Swey_Italy"><File>(Mod Art Dependency File)</File></UpdateArt></InGameActions>]]></InGameActionData>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="FE_Text_Swey_Italy"><File>Text/Swey_Italy_Text.sql</File></UpdateText><UpdateDatabase id="FE_Database_Swey_Italy"><File>Core/Swey_Italy_Config.sql</File></UpdateDatabase><ImportFiles id="FE_Add_Icons_Files_Swey_Italy"><File>Textures/CivilizationIcons256.dds</File><File>Textures/CivilizationIcons200.dds</File><File>Textures/CivilizationIcons80.dds</File><File>Textures/CivilizationIcons64.dds</File><File>Textures/CivilizationIcons50.dds</File><File>Textures/CivilizationIcons48.dds</File><File>Textures/CivilizationIcons44.dds</File><File>Textures/CivilizationIcons36.dds</File><File>Textures/CivilizationIcons30.dds</File><File>Textures/CivilizationIcons22.dds</File><File>Textures/ImprovementIcons256.dds</File><File>Textures/ImprovementIcons128.dds</File><File>Textures/ImprovementIcons80.dds</File><File>Textures/ImprovementIcons50.dds</File><File>Textures/ImprovementIcons38.dds</File><File>Textures/ImprovementIcons32.dds</File></ImportFiles><UpdateIcons id="FE_Update_Icons_Swey_Italy"><File>Core/Swey_Italy_Icons.sql</File></UpdateIcons><UpdateColors id="FE_Update_Colors_Swey_Italy"><File>Core/Swey_Italy_Colors.sql</File></UpdateColors><UpdateArt id="FE_Update_Art_Swey_Italy"><File>(Mod Art Dependency File)</File></UpdateArt></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateText id="IG_Text_Swey_Italy"><File>Text/Swey_Italy_Text.sql</File></UpdateText><UpdateDatabase id="IG_Databse_Swey_Italy"><File>Core/Swey_Italy_Civilizations.sql</File><File>Core/Swey_Italy_Improvements.sql</File><File>Core/Swey_Italy_Info.sql</File><File>Core/Swey_Italy_Leaders.sql</File><File>Core/Swey_Italy_Units.sql</File><File>Core/Swey_Italy_Colors.sql</File></UpdateDatabase><ImportFiles id="IG_Add_Icons_Files_Swey_Italy"><File>Textures/CivilizationIcons256.dds</File><File>Textures/CivilizationIcons200.dds</File><File>Textures/CivilizationIcons80.dds</File><File>Textures/CivilizationIcons64.dds</File><File>Textures/CivilizationIcons50.dds</File><File>Textures/CivilizationIcons48.dds</File><File>Textures/CivilizationIcons44.dds</File><File>Textures/CivilizationIcons36.dds</File><File>Textures/CivilizationIcons30.dds</File><File>Textures/CivilizationIcons22.dds</File><File>Textures/ImprovementIcons256.dds</File><File>Textures/ImprovementIcons128.dds</File><File>Textures/ImprovementIcons80.dds</File><File>Textures/ImprovementIcons50.dds</File><File>Textures/ImprovementIcons38.dds</File><File>Textures/ImprovementIcons32.dds</File></ImportFiles><UpdateIcons id="IG_Update_Icons_Swey_Italy"><File>Core/Swey_Italy_Icons.sql</File></UpdateIcons><UpdateArt id="IG_UpdateArt_Swey_Italy"><File>(Mod Art Dependency File)</File></UpdateArt></InGameActions>]]></InGameActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -45,6 +45,9 @@
     <Content Include="Core\Swey_Italy_Colors.sql">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Core\Swey_Italy_Config.sql">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Core\Swey_Italy_Icons.sql">
       <SubType>Content</SubType>
     </Content>
@@ -57,82 +60,109 @@
     <Content Include="Core\Swey_Italy_Leaders.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Core\Swey_Italy_Players.sql">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Core\Swey_Italy_Units.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations200.dds">
+    <Content Include="Textures\CivilizationIcons200.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations200.tex">
+    <Content Include="Textures\CivilizationIcons200.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations22.dds">
+    <Content Include="Textures\CivilizationIcons22.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations22.tex">
+    <Content Include="Textures\CivilizationIcons22.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations256.dds">
+    <Content Include="Textures\CivilizationIcons256.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations256.tex">
+    <Content Include="Textures\CivilizationIcons256.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations30.dds">
+    <Content Include="Textures\CivilizationIcons30.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations30.tex">
+    <Content Include="Textures\CivilizationIcons30.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations36.dds">
+    <Content Include="Textures\CivilizationIcons36.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations36.tex">
+    <Content Include="Textures\CivilizationIcons36.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations44.dds">
+    <Content Include="Textures\CivilizationIcons44.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations44.tex">
+    <Content Include="Textures\CivilizationIcons44.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations48.dds">
+    <Content Include="Textures\CivilizationIcons48.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations48.tex">
+    <Content Include="Textures\CivilizationIcons48.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations50.dds">
+    <Content Include="Textures\CivilizationIcons50.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations50.tex">
+    <Content Include="Textures\CivilizationIcons50.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations64.dds">
+    <Content Include="Textures\CivilizationIcons64.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations64.tex">
+    <Content Include="Textures\CivilizationIcons64.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations80.dds">
+    <Content Include="Textures\CivilizationIcons80.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Civilizations80.tex">
+    <Content Include="Textures\CivilizationIcons80.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\SardiniaEleanor45.dds">
+    <Content Include="Textures\ImprovementIcons128.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\SardiniaEleanor45.tex">
+    <Content Include="Textures\ImprovementIcons128.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\ImprovementIcons256.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\ImprovementIcons256.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\ImprovementIcons32.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\ImprovementIcons32.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\ImprovementIcons38.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\ImprovementIcons38.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\ImprovementIcons50.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\ImprovementIcons50.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\ImprovementIcons80.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\ImprovementIcons80.tex">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Text\Swey_Italy_Text.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="XLPs\CivilizationsAtlas.xlp">
+    <Content Include="XLPs\IconsAtlas.xlp">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>
