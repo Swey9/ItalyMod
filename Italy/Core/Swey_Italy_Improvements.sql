@@ -4,14 +4,14 @@
 -- Types
 -------------------------------------
 INSERT INTO Types   
-        (Type,                          Kind)
-VALUES  ('IMPROVEMENT_SWEY_NURAGHE',    'KIND_IMPROVEMENT');
+        (Type,                                      Kind)
+VALUES  ('IMPROVEMENT_SWEY_NURAGHE',                'KIND_IMPROVEMENT');
 -------------------------------------
 -- Improvements
 -------------------------------------
 INSERT INTO Improvements
-        (ImprovementType,               Name,                                       Description,                                        Icon,                           PlunderType,        PlunderAmount,  Buildable,  PrereqTech,         PrereqCivic,    Appeal,     Housing,   GrantFortification,     SameAdjacentValid,      TraitType)
-VALUES  ('IMPROVEMENT_SWEY_NURAGHE',    'LOC_IMPROVEMENT_SWEY_NURAGHE_NAME',        'LOC_IMPROVEMENT_SWEY_NURAGHE_DESCRIPTION',         'ICON_IMPROVEMENT_FORT',        'PLUNDER_CULTURE',  '25',           '1',        'TECH_MASONRY',     null,           '0',        '0',       '2',                    '0',                    'TRAIT_CIVILIZATION_IMPROVEMENT_SWEY_NURAGHE');
+        (ImprovementType,                           Name,                                                   Description,                                                Icon,                           PlunderType,        PlunderAmount,  Buildable,  PrereqTech,         PrereqCivic,    Appeal,     Housing,   GrantFortification,      SameAdjacentValid,      TraitType)
+VALUES  ('IMPROVEMENT_SWEY_NURAGHE',                'LOC_IMPROVEMENT_SWEY_NURAGHE_NAME',                    'LOC_IMPROVEMENT_SWEY_NURAGHE_DESCRIPTION',                 'ICON_IMPROVEMENT_FORT',        'PLUNDER_CULTURE',  '25',           '1',        'TECH_MASONRY',     null,           '0',        '0',       '2',                     '0',                    'TRAIT_CIVILIZATION_IMPROVEMENT_SWEY_NURAGHE');
 -------------------------------------
 -- Improvement_ValidTerrains
 -------------------------------------
@@ -31,9 +31,9 @@ VALUES  ('IMPROVEMENT_SWEY_NURAGHE',    'UNIT_BUILDER'),
 -- Improvement_YieldChanges
 -------------------------------------
 INSERT INTO Improvement_YieldChanges
-        (ImprovementType,               YieldType,          YieldChange)
-VALUES  ('IMPROVEMENT_SWEY_NURAGHE',    'YIELD_CULTURE',    '2'),
-        ('IMPROVEMENT_SWEY_NURAGHE',    'YIELD_FAITH',      '0');
+        (ImprovementType,                           YieldType,          YieldChange)
+VALUES  ('IMPROVEMENT_SWEY_NURAGHE',                'YIELD_CULTURE',    '2'),
+        ('IMPROVEMENT_SWEY_NURAGHE',                'YIELD_FAITH',      '0');
 --===============================================================================
 -- IMPROVEMENTS - MODIFIERS
 --===============================================================================
@@ -55,4 +55,24 @@ VALUES  ('SWEY_NURAGHE_HOLYSITEADJACENCY_FAITH',    'YieldType',        'YIELD_F
 INSERT INTO ImprovementModifiers
         (ImprovementType,               ModifierId)
 VALUES  ('IMPROVEMENT_SWEY_NURAGHE',    'SWEY_NURAGHE_HOLYSITEADJACENCY_FAITH');
+--==========================================================================================================================
+-- TRAITS
+--==========================================================================================================================
+-- Types
+-------------------------------------
+INSERT INTO Types   
+        (Type,                                                          Kind)
+VALUES  ('TRAIT_CIVILIZATION_IMPROVEMENT_SWEY_NURAGHE',                 'KIND_TRAIT');
+-------------------------------------
+-- Traits
+-------------------------------------
+INSERT INTO Traits              
+        (TraitType,                                                     Name,                                                                   Description)
+VALUES  ('TRAIT_CIVILIZATION_IMPROVEMENT_SWEY_NURAGHE',                 'LOC_TRAIT_CIVILIZATION_IMPROVEMENT_SWEY_NURAGHE_NAME',                 null);
+-------------------------------------
+-- CivilizationTraits
+-------------------------------------   
+INSERT INTO CivilizationTraits  
+        (TraitType,                                                     CivilizationType)
+VALUES  ('TRAIT_CIVILIZATION_IMPROVEMENT_SWEY_NURAGHE',                 'CIVILIZATION_SWEY_SARDINIA');
 --==========================================================================================================================

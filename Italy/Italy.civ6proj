@@ -22,8 +22,8 @@
 </Associations>]]></AssociationData>
     <AssemblyName>Italy</AssemblyName>
     <RootNamespace>Italy</RootNamespace>
-    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="FE_Text_Swey_Italy"><File>Text/Swey_Italy_Text.sql</File></UpdateText><UpdateDatabase id="FE_Database_Swey_Italy"><File>Core/Swey_Italy_Players.sql</File></UpdateDatabase><ImportFiles id="NewAction"><File>Textures/Sardinia200.dds</File><File>Textures/Sardinia200.tex</File><File>Textures/Sardinia256.dds</File><File>Textures/Sardinia256.tex</File><File>Textures/Sardinia32.dds</File><File>Textures/Sardinia32.tex</File><File>Textures/Sardinia36.dds</File><File>Textures/Sardinia36.tex</File><File>Textures/Sardinia45.dds</File><File>Textures/Sardinia45.tex</File><File>Textures/Sardinia48.dds</File><File>Textures/Sardinia48.tex</File><File>Textures/Sardinia50.dds</File><File>Textures/Sardinia50.tex</File><File>Textures/Sardinia55.dds</File><File>Textures/Sardinia55.tex</File><File>Textures/Sardinia64.dds</File><File>Textures/Sardinia64.tex</File><File>Textures/Sardinia80.dds</File><File>Textures/Sardinia80.tex</File></ImportFiles><UpdateIcons id="FE_Icons_Swey_Italy"><File>Core/Swey_Italy_Icons.sql</File><File>XLPs/SardiniaAtlas.xlp</File></UpdateIcons></FrontEndActions>]]></FrontEndActionData>
-    <InGameActionData><![CDATA[<InGameActions><UpdateText id="IG_Text_Swey_Italy"><File>Text/Swey_Italy_Text.sql</File></UpdateText><UpdateDatabase id="IG_Databse_Swey_Italy"><File>Core/Swey_Italy_Civilizations.sql</File><File>Core/Swey_Italy_Colors.sql</File><File>Core/Swey_Italy_Improvements.sql</File><File>Core/Swey_Italy_Info.sql</File><File>Core/Swey_Italy_Leaders.sql</File><File>Core/Swey_Italy_Traits.sql</File><File>Core/Swey_Italy_Units.sql</File></UpdateDatabase><ImportFiles id="NewAction"><File>Textures/Sardinia200.dds</File><File>Textures/Sardinia200.tex</File><File>Textures/Sardinia256.dds</File><File>Textures/Sardinia256.tex</File><File>Textures/Sardinia32.dds</File><File>Textures/Sardinia32.tex</File><File>Textures/Sardinia36.dds</File><File>Textures/Sardinia36.tex</File><File>Textures/Sardinia45.dds</File><File>Textures/Sardinia45.tex</File><File>Textures/Sardinia48.dds</File><File>Textures/Sardinia48.tex</File><File>Textures/Sardinia50.dds</File><File>Textures/Sardinia50.tex</File><File>Textures/Sardinia55.dds</File><File>Textures/Sardinia55.tex</File><File>Textures/Sardinia64.dds</File><File>Textures/Sardinia64.tex</File><File>Textures/Sardinia80.dds</File><File>Textures/Sardinia80.tex</File></ImportFiles><UpdateIcons id="IG_Icons_Swey_Italy"><File>Core/Swey_Italy_Icons.sql</File><File>XLPs/SardiniaAtlas.xlp</File></UpdateIcons></InGameActions>]]></InGameActionData>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="FE_Text_Swey_Italy"><File>Text/Swey_Italy_Text.sql</File></UpdateText><UpdateDatabase id="FE_Database_Swey_Italy"><File>Core/Swey_Italy_Players.sql</File></UpdateDatabase><ImportFiles id="FE_Add_Icons_Files_Swey_Italy"><File>Textures/Civilizations256.dds</File><File>Textures/Civilizations200.dds</File><File>Textures/Civilizations80.dds</File><File>Textures/Civilizations64.dds</File><File>Textures/Civilizations50.dds</File><File>Textures/Civilizations48.dds</File><File>Textures/Civilizations44.dds</File><File>Textures/Civilizations36.dds</File><File>Textures/Civilizations30.dds</File><File>Textures/Civilizations22.dds</File><File>Textures/Civilizations32.dds</File></ImportFiles><UpdateIcons id="FE_Update_Icons_Swey_Italy"><File>Core/Swey_Italy_Icons.sql</File></UpdateIcons><UpdateArt id="NewAction"><File>(Mod Art Dependency File)</File></UpdateArt></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateText id="IG_Text_Swey_Italy"><File>Text/Swey_Italy_Text.sql</File></UpdateText><UpdateDatabase id="IG_Databse_Swey_Italy"><File>Core/Swey_Italy_Civilizations.sql</File><File>Core/Swey_Italy_Colors.sql</File><File>Core/Swey_Italy_Improvements.sql</File><File>Core/Swey_Italy_Info.sql</File><File>Core/Swey_Italy_Leaders.sql</File><File>Core/Swey_Italy_Units.sql</File></UpdateDatabase><ImportFiles id="IG_Add_Icons_Files_Swey_Italy"><File>Textures/Civilizations256.dds</File><File>Textures/Civilizations200.dds</File><File>Textures/Civilizations80.dds</File><File>Textures/Civilizations64.dds</File><File>Textures/Civilizations50.dds</File><File>Textures/Civilizations48.dds</File><File>Textures/Civilizations44.dds</File><File>Textures/Civilizations36.dds</File><File>Textures/Civilizations30.dds</File><File>Textures/Civilizations22.dds</File><File>Textures/Civilizations32.dds</File></ImportFiles><UpdateIcons id="IG_Update_Icons_Swey_Italy"><File>Core/Swey_Italy_Icons.sql</File></UpdateIcons><UpdateArt id="IG_UpdateArt_Swey_Italy"><File>(Mod Art Dependency File)</File></UpdateArt></InGameActions>]]></InGameActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -60,76 +60,79 @@
     <Content Include="Core\Swey_Italy_Players.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Core\Swey_Italy_Traits.sql">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Core\Swey_Italy_Units.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia200.dds">
+    <Content Include="Textures\Civilizations200.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia200.tex">
+    <Content Include="Textures\Civilizations200.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia256.dds">
+    <Content Include="Textures\Civilizations22.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia256.tex">
+    <Content Include="Textures\Civilizations22.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia32.dds">
+    <Content Include="Textures\Civilizations256.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia32.tex">
+    <Content Include="Textures\Civilizations256.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia36.dds">
+    <Content Include="Textures\Civilizations30.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia36.tex">
+    <Content Include="Textures\Civilizations30.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia45.dds">
+    <Content Include="Textures\Civilizations36.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia45.tex">
+    <Content Include="Textures\Civilizations36.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia48.dds">
+    <Content Include="Textures\Civilizations44.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia48.tex">
+    <Content Include="Textures\Civilizations44.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia50.dds">
+    <Content Include="Textures\Civilizations48.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia50.tex">
+    <Content Include="Textures\Civilizations48.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia55.dds">
+    <Content Include="Textures\Civilizations50.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia55.tex">
+    <Content Include="Textures\Civilizations50.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia64.dds">
+    <Content Include="Textures\Civilizations64.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia64.tex">
+    <Content Include="Textures\Civilizations64.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia80.dds">
+    <Content Include="Textures\Civilizations80.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\Sardinia80.tex">
+    <Content Include="Textures\Civilizations80.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\SardiniaEleanor45.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\SardiniaEleanor45.tex">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Text\Swey_Italy_Text.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="XLPs\SardiniaAtlas.xlp">
+    <Content Include="XLPs\CivilizationsAtlas.xlp">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

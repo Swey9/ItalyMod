@@ -27,3 +27,23 @@ INSERT INTO UnitReplaces
         (CivUniqueUnitType,             ReplacesUnitType)
 VALUES  ('UNIT_SWEY_BUJAKESOS',         'UNIT_KNIGHT');
 --==========================================================================================================================
+-- TRAITS
+--==========================================================================================================================
+-- Types
+-------------------------------------
+INSERT INTO Types   
+        (Type,                                                      Kind)
+VALUES  ('TRAIT_CIVILIZATION_UNIT_SWEY_BUJAKESOS',                  'KIND_TRAIT');
+-------------------------------------
+-- Traits
+-------------------------------------
+INSERT INTO Traits              
+        (TraitType,                                                 Name,                                                           Description)
+VALUES  ('TRAIT_CIVILIZATION_UNIT_SWEY_BUJAKESOS',                  'LOC_TRAIT_CIVILIZATION_UNIT_SWEY_BUJAKESOS_NAME',              null);
+-------------------------------------
+-- CivilizationTraits
+-------------------------------------   
+INSERT INTO CivilizationTraits  
+        (TraitType,                                             CivilizationType)
+VALUES  ('TRAIT_CIVILIZATION_UNIT_SWEY_BUJAKESOS',              'CIVILIZATION_SWEY_SARDINIA');
+--==========================================================================================================================

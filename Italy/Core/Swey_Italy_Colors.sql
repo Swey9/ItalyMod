@@ -5,7 +5,7 @@
 -------------------------------------   
 INSERT OR REPLACE INTO Colors
         (Type,                                                  Color)
-VALUES  ('COLOR_PLAYER_SWEY_SARDINIA_ELEANOR_PRIMARY',          '83,162,48,255'),   --#53A230
+VALUES  ('COLOR_PLAYER_SWEY_SARDINIA_ELEANOR_PRIMARY',          '136,222,136,255'),   --#88DE88
         ('COLOR_PLAYER_SWEY_SARDINIA_ELEANOR_PRIMARY_1',        '95,60,29,255'),    --#5F3C1D
         ('COLOR_PLAYER_SWEY_SARDINIA_ELEANOR_PRIMARY_2',        '18,39,14,255');    --#12270E;
 -------------------------------------
