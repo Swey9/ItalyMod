@@ -17,9 +17,8 @@ VALUES  ('IMPROVEMENT_SWEY_NURAGHE',                'LOC_IMPROVEMENT_SWEY_NURAGH
 -------------------------------------
 INSERT INTO Improvement_ValidTerrains
         (ImprovementType,               TerrainType)
-VALUES  ('IMPROVEMENT_SWEY_NURAGHE',    'TERRAIN_PLAINS'),
-        ('IMPROVEMENT_SWEY_NURAGHE',    'TERRAIN_GRASS'),
-        ('IMPROVEMENT_SWEY_NURAGHE',    'TERRAIN_DESERT');
+SELECT  'IMPROVEMENT_SWEY_NURAGHE',     TerrainType
+FROM Improvement_ValidTerrains WHERE ImprovementType = 'IMPROVEMENT_FORT';
 -------------------------------------
 -- Improvement_ValidBuildUnits
 -------------------------------------       
@@ -32,7 +31,7 @@ VALUES  ('IMPROVEMENT_SWEY_NURAGHE',    'UNIT_BUILDER'),
 -------------------------------------
 INSERT INTO Improvement_YieldChanges
         (ImprovementType,                           YieldType,          YieldChange)
-VALUES  ('IMPROVEMENT_SWEY_NURAGHE',                'YIELD_CULTURE',    '2'),
+VALUES  ('IMPROVEMENT_SWEY_NURAGHE',                'YIELD_CULTURE',    '1'),
         ('IMPROVEMENT_SWEY_NURAGHE',                'YIELD_FAITH',      '0');
 --===============================================================================
 -- IMPROVEMENTS - ADJACENCIES
@@ -40,15 +39,17 @@ VALUES  ('IMPROVEMENT_SWEY_NURAGHE',                'YIELD_CULTURE',    '2'),
 -- Adjacency_YieldChanges
 -------------------------------------
 INSERT INTO Adjacency_YieldChanges
-        (ID,                                    Description,    YieldType,      YieldChange,    TilesRequired,  AdjacentDistrict,       AdjacentNaturalWonder)
-VALUES  ('SweyNuraghe_HolySite_Faith',          'placeholder',  'YIELD_FAITH',  1,              1,              'DISTRICT_HOLY_SITE',   '0'),
-        ('SweyNuraghe_NaturalWonder_Faith',     'placeholder',  'YIELD_FAITH',  2,              1,              null,                   '1');
+        (ID,                                    Description,    YieldType,          YieldChange,    TilesRequired,  AdjacentDistrict,       AdjacentNaturalWonder)
+VALUES  ('SweyNuraghe_CityCenter_Culture',      'placeholder',  'YIELD_CULTURE',    1,              1,              'DISTRICT_CITY_CENTER', '0'),
+        ('SweyNuraghe_HolySite_Faith',          'placeholder',  'YIELD_FAITH',      1,              1,              'DISTRICT_HOLY_SITE',   '0'),
+        ('SweyNuraghe_NaturalWonder_Faith',     'placeholder',  'YIELD_FAITH',      2,              1,              null,                   '1');
 -------------------------------------
 -- Improvement_Adjacencies
 -------------------------------------
 INSERT INTO Improvement_Adjacencies
         (ImprovementType,               YieldChangeId)
-VALUES  ('IMPROVEMENT_SWEY_NURAGHE',    'SweyNuraghe_HolySite_Faith'),
+VALUES  ('IMPROVEMENT_SWEY_NURAGHE',    'SweyNuraghe_CityCenter_Culture'),
+        ('IMPROVEMENT_SWEY_NURAGHE',    'SweyNuraghe_HolySite_Faith'),
         ('IMPROVEMENT_SWEY_NURAGHE',    'SweyNuraghe_NaturalWonder_Faith');
 --==========================================================================================================================
 -- TRAITS

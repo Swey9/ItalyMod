@@ -168,3 +168,60 @@ INSERT INTO CivilizationTraits
         (TraitType,                                             CivilizationType)
 VALUES  ('TRAIT_CIVILIZATION_SWEY_GIUDICATI_OF_SARDINIA',       'CIVILIZATION_SWEY_SARDINIA');
 --==========================================================================================================================
+-- MODIFIERS
+--==========================================================================================================================
+-- TraitModifiers
+-------------------------------------
+INSERT INTO TraitModifiers
+        (TraitType,                                                 ModifierId)
+VALUES  ('TRAIT_CIVILIZATION_SWEY_GIUDICATI_OF_SARDINIA',           'MODIFIER_SWEY_GIUDICATI_INTERNATIONAL_TRADE_PRODUCTION_BASE'),
+        ('TRAIT_CIVILIZATION_SWEY_GIUDICATI_OF_SARDINIA',           'MODIFIER_SWEY_GIUDICATI_INTERNATIONAL_TRADE_CULTURE_BASE'),
+        ('TRAIT_CIVILIZATION_SWEY_GIUDICATI_OF_SARDINIA',           'MODIFIER_SWEY_GIUDICATI_INTERNATIONAL_TRADE_PRODUCTION_AFTER_MEDIEVAL'),
+        ('TRAIT_CIVILIZATION_SWEY_GIUDICATI_OF_SARDINIA',           'MODIFIER_SWEY_GIUDICATI_INTERNATIONAL_TRADE_CULTURE_AFTER_MEDIEVAL');
+-------------------------------------
+-- Requirements
+------------------------------------- 
+INSERT INTO Requirements
+        (RequirementId,                                 RequirementType)
+VALUES  ('SWEY_REQ_REQUIRES_GAME_ERA_AFTER_MEDIEVAL',   'REQUIREMENT_GAME_ERA_ATLEAST_EXPANSION');
+-------------------------------------
+-- RequirementArguments
+-------------------------------------
+INSERT INTO RequirementArguments
+        (RequirementId,                                 Name,       Value)
+VALUES  ('SWEY_REQ_REQUIRES_GAME_ERA_AFTER_MEDIEVAL',   'EraType',  'ERA_MEDIEVAL');
+-------------------------------------
+-- RequirementSets
+-------------------------------------
+INSERT INTO RequirementSets
+        (RequirementSetId,                          RequirementSetType)
+VALUES  ('SWEY_REQ_SET_GAME_ERA_AFTER_MEDIEVAL',    'REQUIREMENTSET_TEST_ALL');
+-------------------------------------
+-- RequirementSetRequirements
+-------------------------------------
+INSERT INTO RequirementSetRequirements
+        (RequirementSetId,                          RequirementId)
+VALUES  ('SWEY_REQ_SET_GAME_ERA_AFTER_MEDIEVAL',    'SWEY_REQ_REQUIRES_GAME_ERA_AFTER_MEDIEVAL');
+-------------------------------------
+-- Modifiers
+------------------------------------- 
+INSERT INTO Modifiers
+        (ModifierId,                                                                ModifierType,                                                   SubjectRequirementSetId)
+VALUES  ('MODIFIER_SWEY_GIUDICATI_INTERNATIONAL_TRADE_PRODUCTION_BASE',             'MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_YIELD_FOR_INTERNATIONAL',   null),
+        ('MODIFIER_SWEY_GIUDICATI_INTERNATIONAL_TRADE_CULTURE_BASE',                'MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_YIELD_FOR_INTERNATIONAL',   null),
+        ('MODIFIER_SWEY_GIUDICATI_INTERNATIONAL_TRADE_PRODUCTION_AFTER_MEDIEVAL',   'MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_YIELD_FOR_INTERNATIONAL',   'SWEY_REQ_SET_GAME_ERA_AFTER_MEDIEVAL'),
+        ('MODIFIER_SWEY_GIUDICATI_INTERNATIONAL_TRADE_CULTURE_AFTER_MEDIEVAL',      'MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_YIELD_FOR_INTERNATIONAL',   'SWEY_REQ_SET_GAME_ERA_AFTER_MEDIEVAL');
+-------------------------------------
+-- ModifierArguments
+------------------------------------- 
+INSERT INTO ModifierArguments
+        (ModifierId,                                                                Name,                   Value)
+VALUES  ('MODIFIER_SWEY_GIUDICATI_INTERNATIONAL_TRADE_PRODUCTION_BASE',             'YieldType',            'YIELD_PRODUCTION'),
+        ('MODIFIER_SWEY_GIUDICATI_INTERNATIONAL_TRADE_PRODUCTION_BASE',             'Amount',               1),
+        ('MODIFIER_SWEY_GIUDICATI_INTERNATIONAL_TRADE_CULTURE_BASE',                'YieldType',            'YIELD_CULTURE'),
+        ('MODIFIER_SWEY_GIUDICATI_INTERNATIONAL_TRADE_CULTURE_BASE',                'Amount',               1),
+        ('MODIFIER_SWEY_GIUDICATI_INTERNATIONAL_TRADE_PRODUCTION_AFTER_MEDIEVAL',   'YieldType',            'YIELD_PRODUCTION'),
+        ('MODIFIER_SWEY_GIUDICATI_INTERNATIONAL_TRADE_PRODUCTION_AFTER_MEDIEVAL',   'Amount',               2),
+        ('MODIFIER_SWEY_GIUDICATI_INTERNATIONAL_TRADE_CULTURE_AFTER_MEDIEVAL',      'YieldType',            'YIELD_CULTURE'),
+        ('MODIFIER_SWEY_GIUDICATI_INTERNATIONAL_TRADE_CULTURE_AFTER_MEDIEVAL',      'Amount',               2);
+--==========================================================================================================================
